@@ -1,0 +1,40 @@
+@import "variables";
+@import "pwaBanners";
+@import "chat";
+@font-face {
+    font-family: vazir;
+    src: url("Vazir.ttf");
+  }
+* {
+  font-family: vazir;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+  .theme--light.v-card {
+    background-color: #F7F7F7 !important;
+  }
+  .fs-xxsmall {
+    font-size: 0.7rem;
+  }
+  .fs-xsmall {
+    font-size: 0.8rem;
+  }
+  .fs-small {
+    font-size: 0.9rem;
+  }
+  .fs-medium {
+    font-size: 1rem;
+  }
+  .fs-large {
+    font-size: 1.1rem;
+  }
+  .fs-xlarge {
+    font-size: 1.2rem;
+  }
+  .fs-xxlarge {
+    font-size: 1.3rem;
+  }
+  .fs-xxxlarge {
+    font-size: 1.4rem;
+  }

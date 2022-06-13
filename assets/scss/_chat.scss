@@ -1,0 +1,204 @@
+.messages {
+    height: 100%;
+  
+    .main {
+      border-radius: 15px !important;
+      padding: 0 10px;
+    }
+    .messages-search {
+      .v-text-field--outlined fieldset {
+        border-color: #ccc !important;
+      }
+    }
+    .list-header {
+      .inbox-text {
+        color: $darkGreyText;
+      }
+      .v-badge__badge {
+        transform: translate(10px, 6px);
+      }
+    }
+    .search-input {
+      .v-input__slot {
+        border-radius: 10px;
+      }
+  
+      .v-input__control {
+        height: 50px;
+      }
+    }
+    .bordered-btn{
+      min-width: 30px !important;
+      width: 30px !important;
+    }
+    .messages-list {
+      &.searchOpen{
+        height: calc(100vh - 255px);
+      }
+      
+      &.searchClose{
+        height: calc(100vh - 195px);
+      }
+      // height: calc(100vh - 200px);
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .message-box {
+        position: relative;
+        .box{
+          padding: 20px 10px;
+          border-radius: 10px;
+          cursor: pointer; 
+          &:hover {
+            background-color: $hover;
+            border-radius: 24px;
+          }
+          i{
+            color: $darkGreyText !important;
+          }         
+        }
+  
+          border-bottom: 1px solid $grey;
+        &.selected{
+          background-color: $primary;
+          border-radius: 24px;
+          i{
+            color: whitesmoke !important;
+          }    
+          .senderName {
+            color: whitesmoke !important;
+          }
+        }
+        .image-box {
+          width: 55px !important;
+          height: 55px !important;
+          border-radius: 50%;
+        }
+        .v-image {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+        .senderName {
+          color: $darkGreyText;
+        }
+        .lastUpdate {
+          position: absolute;
+          top: 53px;
+          right: 10px;
+        }
+        .v-badge__badge {
+          position: absolute;
+          top: 10px;
+          right: 0;
+          transform: translate(-100%, 0%);
+        }
+      }
+    }
+    .chat-box {
+      height: 100%;
+      .first-box {
+        padding: 7px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .border {
+          border-radius: 10px;
+          border: 1px solid $grey;
+          padding: 10px;
+          background-color: rgba(128, 128, 128, 0.048);
+        }
+      }
+    }
+    .chat-header {
+      border-bottom: 1px solid $grey;
+      padding-bottom: 8px;
+      .image-box {
+        width: 70px !important;
+        height: 70px !important;
+        .v-image {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+    .chat-body {
+      max-height: calc(100vh - 260px);
+      height: calc(100vh - 260px);
+      min-height: calc(100% - 75px);
+      padding: 20px 0 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+  
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .chat {
+        padding: 25px 40px;
+        border-top: 1px solid $lightGrey;
+        position: relative !important;
+        .date {
+          position: absolute;
+          top: -12px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          background-color: $cardBg;
+          padding: 0 20px;
+          font-size: 0.95rem;
+          color: $greyText;
+        }
+      }
+      .message {
+        min-width: 200px;
+        max-width: 500px;
+        padding: 10px 15px;
+  
+        &.user1 {
+          background-color: #686868;
+          border-radius: 35px 10px 35px 35px;   
+          i {
+            color: #fff;
+          }
+        }
+        &.user2 {
+          border-radius: 35px 35px 35px 10px;
+          color: #fff;
+          background-color: $primary;
+          path {
+            stroke: $primary;
+          }
+        }
+      }
+    }
+    .chat-footer {
+      .v-text-field.v-text-field--enclosed .v-text-field__details {
+        display: none !important;
+      }
+      .v-input__slot {
+        border-radius: 10px !important;
+        height: 60px;
+      }
+      .v-btn {
+        min-width: 30px !important;
+        height: 42px !important;
+        padding: 0 !important;
+      }
+    }
+    .v-list {
+      min-width: fit-content !important;
+    }
+    .v-text-field .v-input__append-inner {
+      margin: 9px 0 !important;
+    }
+  }
+  .logo{
+    font-size: 25px;
+    color: $primary;
+  }
